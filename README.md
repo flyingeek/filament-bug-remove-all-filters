@@ -7,13 +7,8 @@ git clone git@github.com:flyingeek/filament-bug-report.git
 
 cd filament-bug-report
 
+# This will also seed a sqlite database
 composer install
-
-touch database/database.sqlite
-
-cp .env.example .env
-
-php artisan migrate:fresh --seed
 
 php artisan serve
 ```
