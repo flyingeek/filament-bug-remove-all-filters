@@ -3,11 +3,15 @@
 ## Installation
 
 ```sh
-git checkout git@github.com:flyingeek/filament-bug-report.git
+git clone git@github.com:flyingeek/filament-bug-report.git
+
+cd filament-bug-report
 
 composer install
 
 touch database/database.sqlite
+
+cp .env.example .env
 
 php artisan migrate:fresh --seed
 
